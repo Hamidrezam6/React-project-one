@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.selectedItem {
+  background-color: aqua;
+  color: brown;
+  font-size: 18px;
+}

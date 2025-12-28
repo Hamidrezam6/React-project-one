@@ -1,5 +1,15 @@
+import { useState } from "react";
+
 const List = () => {
     const items = ['apple', 'samsung', 'tesla', 'benz'];
+
+    const [selectedItem, setSelectedItem] = useState(0);
+
+    const handleClick = (index) => {
+        setSelectedItem(index)
+    };
+
+
     return (
         <>
             <label>
@@ -9,10 +19,9 @@ const List = () => {
                 {items.length ? (
                     items.map((item, index) => (
                         <li 
-                          onClick={(e) => {
-                            console.log ('clicked', e);
-                          }}
+                          onClick={() => handleClick(index)}
                           key={item}
+                          className={selectedItem === index ? "selectedItem" : ""}
                         >
                           {item}---{index}
                         </li>
