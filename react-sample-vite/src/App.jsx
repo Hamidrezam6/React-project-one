@@ -4,13 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import List from './components/list'
 
+
+const companies = ['Tesla', 'Apple', 'Microsoft', 'Sony'];
 function App() {
   const [count, setCount] = useState(0)
+  const handleSelectItem = (item) => {
+    console.log ('item:', item);
+  };
 
   return (
     <>
       <div>
-        <List />
+        <List items = {companies} onClick={handleSelectItem}/>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
