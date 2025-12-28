@@ -46,3 +46,12 @@
   color: brown;
   font-size: 18px;
 }
+
+
+.card {
+  background-color: gray;
+  border-radius: 6px;
+  padding: 24px;
+  margin: 8px 16px;
+  display: flex;
+}
