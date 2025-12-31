@@ -1,15 +1,19 @@
-.list__item {
+.item {
     color: white;
     border-radius: 6px;
     padding: 4px 8px;
 }
-.--active{
+.active{
     background-color: black;
 }
 
-label {
+.listLabel {
     padding: 12px 8px;
     font-size: 20px;
     font-weight: 700;
-    color: aqua;
+    color: brown;
+}
+
+.test{
+    background-color: cadetblue;
 }

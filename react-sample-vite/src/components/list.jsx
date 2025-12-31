@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./list.css";
+import styles from "./list.module.css";
 
 const List = ({ items, onClick, label }) => {
   const [selectedItem, setSelectedItem] = useState(0);
@@ -11,15 +11,17 @@ const List = ({ items, onClick, label }) => {
 
   return (
     <>
-      <label className="list-label">{label}</label>
+      <label className={[styles.listLabel, styles.test].join(" ")}>
+        {label}
+      </label>
       <ul>
         {items?.length ? (
           items.map((item, index) => (
             <li
               onClick={() => handleClick(index, item)}
               key={item}
-              className={`list__item ${
-                selectedItem === index ? "--active" : ""
+              className={`${styles.item} ${
+                selectedItem === index ? styles.active : ""
               }`}
             >
               {item}-{index}
