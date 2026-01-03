@@ -2,6 +2,7 @@ import "./App.css";
 import List from "./components/List";
 import Card from "./components/Card";
 import Heading from "./components/Heading";
+import Button from "./components/Button";
 
 const companies = ["Tesla", "Apple", "Microsoft", "Sony"];
 function App() {
@@ -18,6 +19,7 @@ function App() {
           onClick={handleSelectItem}
           label="List of Companies:"
         />
+        <Button />
       </Card>
     </div>
   );
