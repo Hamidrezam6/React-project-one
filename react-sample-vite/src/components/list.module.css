@@ -1,10 +1,11 @@
 .item {
-    color: white;
+    color: rgb(14, 13, 13);
     border-radius: 6px;
     padding: 4px 8px;
 }
 .active{
     background-color: black;
+    color: wheat;
 }
 
 .listLabel {

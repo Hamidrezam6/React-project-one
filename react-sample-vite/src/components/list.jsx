@@ -11,9 +11,7 @@ const List = ({ items, onClick, label }) => {
 
   return (
     <>
-      <label className={[styles.listLabel, styles.test].join(" ")}>
-        {label}
-      </label>
+      <label>{label}</label>
       <ul>
         {items?.length ? (
           items.map((item, index) => (
