@@ -1,5 +1,5 @@
 import "./App.css";
-import List from "./components/List";
+import List from "./components/list";
 import Card from "./components/Card";
 import Heading from "./components/Heading";
 import Button from "./components/Button";

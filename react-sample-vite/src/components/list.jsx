@@ -11,7 +11,7 @@ const List = ({ items, onClick, label }) => {
 
   return (
     <>
-      <label>{label}</label>
+      <label style={{backgroundColor:'red'}}>{label}</label>
       <ul>
         {items?.length ? (
           items.map((item, index) => (
